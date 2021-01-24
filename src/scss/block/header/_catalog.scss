@@ -1,0 +1,42 @@
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 13px 14px 0;
+    &__item {
+        text-align: center;
+        cursor: pointer;
+        margin-right: 30px;
+        img {
+            width: 45px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__title {
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &__mobile {
+        position: relative;
+        display: none;
+        padding: 9px 0 29px 20px ;
+        font-size: 20px;
+        font-weight: 300;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #777777;
+            border-right: 2px solid #777777;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+    }
+}

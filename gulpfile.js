@@ -214,4 +214,4 @@ const scriptsBuild = () => {
         .pipe(dest('./dist/js'))
     }
 
-    exports.build = series(clean, parallel(htmlInclude, fonts, stylesBuild, scriptsBuild, scriptAdd, imgApp, iconsApp, assets), tinypngEnd)
+    exports.build = series(clean, parallel(htmlInclude, fonts, stylesBuild, scriptsBuild, scriptAdd, imgApp, iconsApp, assets, tinypngEnd))

@@ -1,0 +1,38 @@
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 39px;
+    &__item {
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+            transition: 0.5s all;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 13px;
+            margin-right: 4px;
+        }
+    }
+    &__line {
+        width: 1px;
+        height: 23px;
+        background-color: rgba($color: #d5bee7, $alpha: 0.25);
+    }
+}
