@@ -19,7 +19,7 @@
         }
         select {
             width: 50px;
-            padding: 8px 0px 8px 11px;
+            padding-left: 11px;
             border: none;
             line-height: 1;
             appearance: none;
@@ -28,6 +28,7 @@
             color: #777777;
             font-size: 14px;
             font-weight: 400;
+            height: 33px;
             &:active,
             &:focus {
                 border: none;
@@ -47,7 +48,7 @@
     }
     &__btn {
         width: 40px;
-        height: 28px;
+        height: 33px;
         background-color: #ffaf2d;
         border: none;
         border-radius: 0 5px 5px 0;

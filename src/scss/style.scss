@@ -11,21 +11,45 @@
 }
 
 body {
-    line-height: 0;
     background-color: #e8e7e7;
-    ul {
+
+    ul, h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0;
     }
 }
 
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.btn {
+    min-width: 102px;
+    min-height: 27px;
+    border-radius: 18px;
+    margin: 0 auto;
+    border: none;
+    &:active,
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+
 @import 'block/header';
+@import 'block/promo';
 
 .no-scroll {
     height: 100%;
     overflow: hidden;
     width: 100%;
     position: fixed;
-    
 }
+
 
 @import'base/mobile';

@@ -1,0 +1,119 @@
+.promo {
+    margin-top: 16px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 20% 59% 20%;
+        gap: 15px;
+    }
+    &__menu {
+        padding: 20px 0 11px 0;
+        background-color: #ffffff;
+    }
+    &__title {
+        color: #ffaf2d;
+        font-size: 19px;
+        font-weight: 400;
+        padding-left: 25px;
+        margin-bottom: 7px;
+    }
+    &__item {
+        position: relative;
+        list-style: none;
+        padding-left: 25px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: #303030;
+        font-size: 13px;
+        font-weight: 300;
+        border-bottom: 1px solid rgba($color: #bababa, $alpha: .25);
+        cursor: pointer;
+        &:nth-child(9) {
+            border: none;
+            padding-bottom: 0;
+        }
+        &:hover {
+            color: #ffaf2d;
+            transition: 0.2s all;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #303030;
+            border-right: 2px solid #303030;
+            transform: rotate(45deg);
+            opacity: 0.4;
+            cursor: pointer;
+        }
+        &-sale {
+            padding-left: 0;
+            color: #ffaf2d;
+            font-size: 15px;
+            padding-bottom: 38px;
+            padding-top: 4px;
+            &::after {
+                left: 60%;
+                border-top: 2px solid #ffaf2d;
+                border-right: 2px solid #ffaf2d;;
+            }
+        }
+    }
+    @import 'promo/slider';
+
+    &__sale {
+        border: 2px solid #ffaf2d;
+        background-color: #ffffff;
+        padding-left: 19px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__img {
+        padding-bottom: 7px;
+        img {
+            width: 60px;
+        }
+    }
+    &__text {
+        margin-bottom: -8px;
+        color: #121212;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__desc {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    &__brend {
+        background-color: #ffffff;
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: minmax(80px, auto);
+        grid-auto-rows: minmax(80px, auto);
+        padding-right: 6px;
+    }
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #e8e7e7;
+        margin: 15px 0;
+        img {
+            max-width: 106px;
+        }
+    }
+    &__all {
+        justify-self: center;
+        align-self: center;
+        color: #232323;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

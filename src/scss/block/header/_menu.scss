@@ -12,8 +12,7 @@
         display: flex;
         align-items: center;
         height: 100%;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 0 8px 0 8px ;
 
         &:hover {
             background-color: rgba($color: #ffffff, $alpha: 0.2);
