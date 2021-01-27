@@ -13,7 +13,7 @@
 body {
     background-color: #f4f2f2;
 
-    ul, h1, h2, h3, h4, h5, h6 {
+    ul, h1, h2, h3, h4, h5, h6, p {
         margin-bottom: 0;
     }
 }
@@ -65,6 +65,7 @@ body {
 @import 'block/promo';
 @import 'block/news';
 @import 'block/recom';
+@import 'block/sentence';
 
 .no-scroll {
     height: 100%;
