@@ -1,0 +1,109 @@
+.recom {
+    padding-top: 127px;
+    padding-left: 22px;
+    &__wrapper {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: 476px 625px;
+        grid-template-rows: 334px 250px;
+        margin-left: 60px;
+        gap: 10px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__item {
+        background-color: #ffffff;
+        &:nth-child(1) {
+            grid-row: 1 / 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+        }
+        &:nth-child(2) {
+            background-color: #232323;
+            display: grid;
+            grid-template-columns: 196px 320px;
+            padding-top: 13px;
+        }
+        &:nth-child(3) {
+            display: grid;
+            grid-template-columns: 332px 232px;
+            justify-content: end;
+            column-gap: 15px;
+            padding-top: 6px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__desc {
+        text-transform: uppercase;
+        color: #121212;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: -8px;
+        &-wh {
+            color: #ffffff;
+            margin-bottom: 3px;
+        }
+        &-mt{
+            margin-top: 45px;
+        }
+    }    
+    &__subtitle {
+        color: #121212;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 13px;
+        
+        &-wh {
+            color: #ffffff;
+            max-width: 200px;
+            line-height: 30px;
+            
+        }
+    }
+    &__text {
+        margin: 0 auto 27px;
+        max-width: 550px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #787878;
+        line-height: 16px;
+        &-cn {
+            text-align: center;
+        }
+    }
+    &__img {
+        &-vertical {
+            img {
+                max-width: 345px;
+            }
+        }
+        &-top {
+            grid-row: 1;
+            img {
+                max-width: 150px;
+            }
+        }
+        &-bottom {
+            img {
+                max-width: 232px;
+            }
+        }
+        &-mobile {
+            display: none;
+        }  
+    }
+    .whild {
+        &-l {
+            max-width: 247px;
+        }
+    }
+}
