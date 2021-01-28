@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .sentence {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sentence {
+        &__item {
+            &:nth-child(2) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sentence {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &__item {
+            &:nth-child(1) {
+                order: 2;
+
+            }
+
+            &:nth-child(2) {
+                order: 1;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__desc {
+            &-card {
+                display: none;
+            }
+        }
+
+        &__title {
+            display: none;
+        }
+    }
+}

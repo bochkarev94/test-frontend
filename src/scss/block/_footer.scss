@@ -1,0 +1,97 @@
+.footer {
+    margin-top: 135px;
+    background-color: #232323;
+    padding-top: 70px;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 60px;
+        &-pb {
+            padding-bottom: 30px;
+        }
+    }
+    &__item {
+        &:nth-child(2) {
+            margin-left: 16px;
+        }
+        &:nth-child(3) {
+            margin-right: -6px;
+        }
+        &:nth-child(4) {
+            margin-right: -12px;
+        }
+    }
+    &__title {
+        color: #777777;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        &-mb {
+            margin-bottom: 7px;
+        }
+        &-white {
+            margin-bottom: 0;
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 400;
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+    &__list {
+        list-style: none;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 400;
+        a {
+            text-decoration: none;
+            color: unset;
+            &:hover {
+                color: #ffaf2d;
+            }
+        }
+        &-fz {
+            font-size: 16px;
+            margin-right: -21px;
+            margin-top: -4px;
+        }
+    }
+    &__contacts {
+        li {
+            margin-bottom: -3px;
+        }
+        .mb {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__base {
+        background-color: #191919;
+        padding-top: 31px;
+    }
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__img {
+        padding-top: 4px;
+        img {
+            max-width: 32px;
+        }
+    }
+    &__subtitle {
+        color: #787878;
+        font-size: 13px;
+        letter-spacing: 0.25px;
+        font-weight: 300;
+        line-height: 7px;
+    }
+    &__desc {
+        margin-left: 10px;
+    }
+}
