@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+    .overlay {
+        .menu {
+            &__outlers {
+                &-long {
+                    grid-template-columns: 279px 191px 184px 310px;
+                }
+            }
+            &-pl {
+                padding-top: 8px;
+            }
+        }
+    } 
+}
+@media (max-width: 992px) {
+    .overlay {
+        top: 305px;
+        .menu {
+            &__outlers {
+                &-long {
+                    grid-template-columns: 244px 178px 155px 200px;
+                }
+                &-short {
+                    grid-template-columns: 231px 183px 332px;
+                }
+                grid-auto-rows: 330px;
+            }
+            &__list {
+                line-height: 15px;
+                &-fz {
+                    font-size: 16px;
+                }
+            }
+            &-pl {
+                padding-left: 0px;
+            }
+            &__content {
+                &-long {
+                    img {
+                        max-width: 110px;
+                    }
+                }
+            }
+            &__title {
+                margin-top: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+}

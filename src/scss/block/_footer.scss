@@ -23,6 +23,9 @@
         &:nth-child(4) {
             margin-right: -12px;
         }
+        &-mobile {
+            display: none;
+        }
     }
     &__title {
         color: #777777;
@@ -38,9 +41,7 @@
             font-size: 19px;
             font-weight: 400;
         }
-        &-mobile {
-            display: none;
-        }
+        
     }
     &__list {
         list-style: none;

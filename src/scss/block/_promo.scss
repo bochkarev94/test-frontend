@@ -26,8 +26,11 @@
         font-size: 13px;
         font-weight: 300;
         border-bottom: 1px solid rgba($color: #bababa, $alpha: .25);
-        cursor: pointer;
-        &:nth-child(9) {
+        a {
+            text-decoration: none;
+            color:unset;
+        }
+        &:last-child {
             border: none;
             padding-bottom: 0;
         }
@@ -68,6 +71,7 @@
         background-color: #ffffff;
         padding-left: 19px;
         padding-top: 20px;
+        padding-bottom: 39px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

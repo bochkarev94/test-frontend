@@ -219,11 +219,11 @@
         <div class="catalog">
           <div class="catalog__item">
             <img src="img/header/1.png" alt="Тепловое" />
-            <div class="catalog__title">Тепловое</div>
+            <div data-menu="long" class="catalog__title">Тепловое</div>
           </div>
           <div class="catalog__item">
             <img src="img/header/2.png" alt="Холодильное" />
-            <div class="catalog__title">Холодильное</div>
+            <div data-menu="short" class="catalog__title">Холодильное</div>
           </div>
           <div class="catalog__item">
             <img src="img/header/3.png" alt="Электромеханическое" />
@@ -274,15 +274,21 @@
           <div class="promo__menu">
             <h2 class="promo__title">Целевые предложения</h2>
             <ul>
-              <li class="promo__item">Кафе, барам, ресторанам</li>
-              <li class="promo__item">Дестким садам и школам</li>
-              <li class="promo__item">Таблет-питание</li>
-              <li class="promo__item">Для столовых</li>
-              <li class="promo__item">Для пищеблоков</li>
-              <li class="promo__item">Государственным заказкам</li>
-              <li class="promo__item">Для магазинов</li>
-              <li class="promo__item">Для войсковых частей</li>
-              <li class="promo__item">Все предложения</li>
+              <li class="promo__item">
+                <a href="#">Кафе, барам, ресторанам </a>
+              </li>
+              <li class="promo__item">
+                <a href="#">Дестким садам и школам</a>
+              </li>
+              <li class="promo__item"><a href="#">Таблет-питание</a></li>
+              <li class="promo__item"><a href="#">Для столовых</a></li>
+              <li class="promo__item"><a href="#">Для пищеблоков</a></li>
+              <li class="promo__item">
+                <a href="#">Государственным заказкам</a>
+              </li>
+              <li class="promo__item"><a href="#">Для магазинов</a></li>
+              <li class="promo__item"><a href="#">Для войсковых частей</a></li>
+              <li class="promo__item"><a href="#">Все предложения</a></li>
             </ul>
           </div>
           <div class="slider">
@@ -678,6 +684,193 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay">
+      <div class="menu__outlers menu__outlers-long" id="long">
+        <div class="menu-pl promo__menu">
+          <ul>
+            <li class="menu__list promo__item menu__list-active">
+              <a href="#">Холодильные шкафы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Камеры холодильные</a>
+            </li>
+            <li class="menu__list promo__item"><a href="#">Моноблоки</a></li>
+            <li class="menu__list promo__item">
+              <a href="#">Сплит-системы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Столы холодильные</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Витрины холодильные</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Горки холодильные</a>
+            </li>
+            <li class="menu__list promo__item"><a href="#">Бонеты</a></li>
+            <li class="menu__list promo__item">
+              <a href="#">Лари морозильные</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Льдогенераторы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Шкафы шоковой заморозки</a>
+            </li>
+            <li class="menu__list promo__item"><a href="#">Кегераторы</a></li>
+          </ul>
+        </div>
+        <div class="menu__wrapper">
+          <ul class="menu__view menu__view-pb">
+            <li class="menu__list"><a href="#">Среднетемпературные</a></li>
+            <li class="menu__list"><a href="#">Низкотемпературные</a></li>
+            <li class="menu__list"><a href="#">Универсальные</a></li>
+            <li class="menu__list"><a href="#">Комбинированные</a></li>
+            <li class="menu__list"><a href="#">Барные</a></li>
+            <li class="menu__list"><a href="#">Все сразу</a></li>
+          </ul>
+          <ul class="menu__view menu__view-pt">
+            <h3 class="menu__subtitle">Страны</h3>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Spain.png" alt="Spain" />
+              <a href="">Испания</a>
+            </li>
+            <li class="menu__list">
+              <img
+                src="icons/flags/Flag_of_Switzerland.png"
+                alt="Switzerland"
+              />
+              <a href="">Швейцария</a>
+            </li>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Germany.png" alt="Germany" />
+              <a href="">Германия</a>
+            </li>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Turkey.png" alt="Turkey" />
+              <a href="">Турция</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__brends">
+          <h3 class="menu__subtitle">Бренды</h3>
+          <ul>
+            <li class="menu__list menu__list-fz"><a href="#">ELECTROLUX</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Gastrorag</a></li>
+            <li class="menu__list menu__list-fz menu__list-active">
+              <a href="#">АРИАДА</a>
+            </li>
+            <li class="menu__list menu__list-fz"><a href="#">Abat</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">МХМ</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">ПОЛЮС</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Hicold</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">POLAIR</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Премьер</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Бирюса</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Россия</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">TEFCOLD</a></li>
+          </ul>
+        </div>
+        <div class="menu__content menu__content-long">
+          <img
+            src="img/menu-outlers/12f0263a24c465a94a1e92f6f52b9ca1.png"
+            alt="equipment"
+          />
+          <h2 class="menu__title">Холодильное оборудование</h2>
+          <button class="btn menu__btn">Все сразу</button>
+        </div>
+      </div>
+      <div class="menu__outlers menu__outlers-short" id="short">
+        <div class="menu-pl promo__menu">
+          <ul>
+            <li class="menu__list promo__item menu__list-active">
+              <a href="#">Пароконвектоматы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Конвекционные печи</a>
+            </li>
+            <li class="menu__list promo__item"><a href="#">Плиты</a></li>
+            <li class="menu__list promo__item">
+              <a href="#">Электросковороды</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Электросковороды</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Котлы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Фритюрницы</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Жарочные поверхности</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Кипятильники</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Водонагреватели</a>
+            </li>
+            <li class="menu__list promo__item">
+              <a href="#">Столы тепловые</a>
+            </li>
+            <li class="menu__list promo__item">Мармиты<a href="#"></a></li>
+            <li class="menu__list promo__item">Тостеры<a href="#"></a></li>
+            <li class="menu__list promo__item">
+              <a href="#">Шкафы тепловые</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__wrapper">
+          <ul class="menu__view menu__view-pb menu__view-short">
+            <li class="menu__list"><a href="#">Бойлерные</a></li>
+            <li class="menu__list"><a href="#">Инжекторные</a></li>
+            <li class="menu__list"><a href="#">Все сразу</a></li>
+          </ul>
+          <ul class="menu__view menu__view-br">
+            <h3 class="menu__subtitle">Бренды</h3>
+            <li class="menu__list menu__list-fz"><a href="#">Abat</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Unox</a></li>
+            <li class="menu__list menu__list-fz menu__list-active">
+              <a href="#">Проммаш</a>
+            </li>
+            <li class="menu__list menu__list-fz"><a href="#">Atesy</a></li>
+            <li class="menu__list menu__list-fz"><a href="#">Rational</a></li>
+          </ul>
+          <ul class="menu__view menu__view-pt menu__view-mt">
+            <h3 class="menu__subtitle">Страны</h3>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Spain.png" alt="Spain" />
+              <a href="">Испания</a>
+            </li>
+            <li class="menu__list">
+              <img
+                src="icons/flags/Flag_of_Switzerland.png"
+                alt="Switzerland"
+              />
+              <a href="">Швейцария</a>
+            </li>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Germany.png" alt="Germany" />
+              <a href="">Германия</a>
+            </li>
+            <li class="menu__list">
+              <img src="icons/flags/Flag_of_Turkey.png" alt="Turkey" />
+              <a href="">Турция</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__content menu__content-short">
+          <img
+            src="img/menu-outlers/3bf54ae94d5999abc6ccbf362d2417e7.png"
+            alt="equipment"
+          />
+          <h2 class="menu__title menu__title-short">Пароконвектоматы</h2>
+          <button class="btn menu__btn menu__btn-short">Все сразу</button>
+        </div>
+      </div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
