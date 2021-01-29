@@ -34,4 +34,7 @@
         height: 23px;
         background-color: rgba($color: #d5bee7, $alpha: 0.25);
     }
+    &__close {
+        display: none;
+    }
 }
