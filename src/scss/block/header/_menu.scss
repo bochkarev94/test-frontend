@@ -18,6 +18,9 @@
             background-color: rgba($color: #ffffff, $alpha: 0.2);
             transition: 0.5s all;
         }
+        &-active {
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+        }
 
         a {
             color: #fff;

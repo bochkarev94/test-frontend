@@ -1,36 +1,38 @@
 import {showModal, hiddenModal} from './modalOverlay';
 
-const modalMenu = (trigger, idSelector, overlaySelector, display) => {
+const menu = (trigger, idSelector, overlaySelector, display) => {
 
     const btn = document.querySelector(trigger),
-        modal = document.querySelector(idSelector),
+        menu = document.querySelector(idSelector),
         overlay = document.querySelector(overlaySelector);
 
         btn.addEventListener('click', (e) => {
             e.preventDefault();
 
-            document.querySelectorAll('.menu__outlers').forEach (modal => {
-                modal.style.display='none';
+            document.querySelectorAll('.menu__outlers').forEach (menu => {
+                menu.style.display='none';
             });
 
             if (overlay.style.display === 'block') {
-                hiddenModal(overlay, modal);
+                hiddenModal(overlay, menu);
             } else {
-                showModal(overlay, modal, display);
+                showModal(overlay, menu, display);
             }
         });
 
         overlay.addEventListener ('click', (e) => {
         if (e.target === overlay) {
-            hiddenModal(overlay, modal);
+            hiddenModal(overlay, menu);
         }
     });
 
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape') {
-            hiddenModal(overlay, modal);
+            hiddenModal(overlay, menu);
         }
     });
+
+    
 }
 
-export default modalMenu;
+export default menu;

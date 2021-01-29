@@ -1,0 +1,16 @@
+.btn {
+    &__copy {
+        display: none;
+        position: absolute;
+        margin-top: 82px;
+        margin-left: -10px;
+        color: #fff;
+        height: 37px;
+        width: 123px;
+        font-size: 13px;
+        font-weight: 400;
+        z-index: 101;
+        background-color: #232323;
+        box-shadow: 4px 6px 24px rgba(0, 0, 0, 0.49);
+    }
+}
