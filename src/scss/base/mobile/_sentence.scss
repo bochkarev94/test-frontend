@@ -34,14 +34,11 @@
             }
         }
 
-        &__desc {
-            &-card {
-                display: none;
-            }
-        }
 
-        &__title {
-            display: none;
+    .card {
+        opacity: 0;
+        margin-top: -93px;
+        transition: 1s all;
         }
     }
 }

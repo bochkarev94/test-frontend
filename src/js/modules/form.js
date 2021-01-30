@@ -9,7 +9,7 @@ const formModal = (statusSelector, overlaySelector, modalSelector) => {
 
     const message = {
         loading: 'Загрузка...',
-        success: 'Спасибо! Скоро мы с вами свяжимся',
+        success: 'Спасибо! Скоро мы с вами свяжимся.',
         failure: 'Что-то пошло не так...'
     };
 
