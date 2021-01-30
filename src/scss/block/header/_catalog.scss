@@ -7,6 +7,9 @@
     &__item {
         text-align: center;
         cursor: pointer;
+        &:nth-child(1) {
+            margin-right: 15px;
+        }
         img {
             width: 45px;
         }

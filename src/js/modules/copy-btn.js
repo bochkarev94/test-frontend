@@ -1,14 +1,15 @@
-const copyBtn = (trigger, idSelect, btnSelect) => {
+const copyBtn = (trigger, idSelector, btnSelect) => {
+
         const mailTrigger = document.querySelector(trigger),
             btn = document.querySelector(btnSelect);
 
-        function copy (idSelect) {
+        function copy (idSelector) {
             const textarea = document.createElement('textarea');
 
             textarea.id = 'temp_element';
             textarea.style.height = 0;
             document.body.appendChild(textarea);
-            textarea.value = document.getElementById(idSelect).innerText;
+            textarea.value = document.getElementById(idSelector).innerText;
 
             const selector = document.querySelector('#temp_element');
 
@@ -16,7 +17,7 @@ const copyBtn = (trigger, idSelect, btnSelect) => {
             document.execCommand('copy');
             document.body.removeChild(textarea);
     };
-    
+
     mailTrigger.addEventListener('click', () => {
         mailTrigger.classList.add('menu__item-active');
         btn.style.display = 'block';
@@ -26,7 +27,7 @@ const copyBtn = (trigger, idSelect, btnSelect) => {
 
         document.querySelector('.header__text-copy').innerText='Текст скопирован в буфер обмена.';
 
-        copy(idSelect);
+        copy(idSelector);
         setTimeout(() => {
             document.querySelector('.header__text-copy').innerText='';
             mailTrigger.classList.remove('menu__item-active');

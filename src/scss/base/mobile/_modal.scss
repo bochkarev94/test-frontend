@@ -1,0 +1,21 @@
+@media (max-width: 1410px) {
+    .overlay__modal {
+        .modal {
+            right: 50px;
+        }
+    }  
+}
+@media (max-width: 1330px) {
+    .overlay__modal {
+        .modal {
+            right: 0;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .overlay__modal {
+        .modal {
+            right: 161px;
+        }
+    }
+}

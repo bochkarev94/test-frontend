@@ -104,7 +104,7 @@
             <a href="#" id="mail">info@stolovay.ru</a>
             <button class="btn btn__copy"><a href="#">Скопировать</a></button>
           </li>
-          <li class="menu__item">
+          <li data-modal="phone" class="menu__item">
             <img src="icons/header/telephone.svg" alt="phone" />
             <a href="#">8 495 790-72-05</a>
           </li>
@@ -221,11 +221,11 @@
         <div class="catalog">
           <div class="catalog__item">
             <img src="img/header/1.png" alt="Тепловое" />
-            <div data-menu="long" class="catalog__title">Тепловое</div>
+            <div data-menu="short" class="catalog__title">Тепловое</div>
           </div>
           <div class="catalog__item">
             <img src="img/header/2.png" alt="Холодильное" />
-            <div data-menu="short" class="catalog__title">Холодильное</div>
+            <div data-menu="long" class="catalog__title">Холодильное</div>
           </div>
           <div class="catalog__item">
             <img src="img/header/3.png" alt="Электромеханическое" />
@@ -873,7 +873,60 @@
         </div>
       </div>
     </div>
-    <div class="overlay__tp"></div>
+
+    <div class="overlay__hamburger"></div>
+
+    <div class="overlay__modal">
+      <div class="modal">
+        <div class="modal__close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="modal__wrapper">
+          <div class="modal__item">
+            <div class="modal__phone">
+              <a href="tel:84957907205">8 495 790-72-05</a>
+            </div>
+            <div class="modal__desc">Мы принимаем звонки без выходных.</div>
+            <div class="modal__connect">Выберите способ связи:</div>
+            <ul>
+              <li class="modal__list">
+                <img src="icons/modal-icons/telephone.png" alt="telephone" />
+                <a class="underlind" href="#">Мобильный</a>
+              </li>
+              <li class="modal__list">
+                <img src="icons/modal-icons/viber.png" alt="viber" />
+                <a href="#">Viber</a>
+              </li>
+              <li class="modal__list">
+                <img src="icons/modal-icons/telegram.png" alt="telegram" />
+                <a href="#">Telegram</a>
+              </li>
+              <li class="modal__list">
+                <img src="icons/modal-icons/whatsapp.png" alt="whatsapp" />
+                <a href="#">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal__item">
+            <h2 class="modal__title">Обратный звонок:</h2>
+            <div class="modal__desc">Мы перезвоним вам в течении часа</div>
+            <form action="#" class="modal__form">
+              <div class="modal__input">
+                <label for="text">Имя:</label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="modal__input">
+                <label for="text">Телефон:</label>
+                <input type="text" name="phone" required />
+              </div>
+              <div class="modal__status"></div>
+              <button class="btn modal__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>

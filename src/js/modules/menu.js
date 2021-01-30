@@ -1,6 +1,6 @@
 import {showModal, hiddenModal} from './modalOverlay';
 
-const menu = (trigger, idSelector, overlaySelector, display) => {
+const menu = (trigger, idSelector, overlaySelector) => {
 
     const btn = document.querySelector(trigger),
         menu = document.querySelector(idSelector),
@@ -16,7 +16,7 @@ const menu = (trigger, idSelector, overlaySelector, display) => {
             if (overlay.style.display === 'block') {
                 hiddenModal(overlay, menu);
             } else {
-                showModal(overlay, menu, display);
+                showModal(overlay, menu, 'grid');
             }
         });
 

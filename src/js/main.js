@@ -1,12 +1,16 @@
 import hamburger from './modules/hamburger';
-import modalMenu from './modules/modalMenu';
+import menu from './modules/menu';
 import copyBtn from './modules/copy-btn';
+import modal from './modules/modal';
+import formModal from './modules/form';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
 
-hamburger('.header__hamburger', '#header-menu', '.overlay__tp', '.menu__close');
-modalMenu('[data-menu="long"]', '#long', '.overlay', 'grid');
-modalMenu('[data-menu="short"]', '#short', '.overlay', 'grid');
+hamburger('.header__hamburger', '#header-menu', '.overlay__hamburger', '.menu__close');
+menu('[data-menu="short"]', '#short', '.overlay');
+menu('[data-menu="long"]', '#long', '.overlay');
 copyBtn('[data-mail="copy"]', 'mail', '.btn__copy');
+modal('[data-modal="phone"]', '.overlay__modal', '.modal', '.modal__close');
+formModal('.modal__status', '.overlay__modal', '.modal');
 })
