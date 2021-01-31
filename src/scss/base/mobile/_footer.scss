@@ -35,6 +35,9 @@
             padding-bottom: 0;
             &-list {
                 display: none;
+                &-active {
+                    display: block;
+                }
             }
             &-pb {
                 flex-direction: row;
@@ -64,6 +67,16 @@
                 top: 50%;
                 transform: translateY(-50%);
                 cursor: pointer;
+            }
+            &-active {
+                &::after {
+                    content: '-';
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
             }
         }
     }

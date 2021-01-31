@@ -8,6 +8,7 @@ import slider from './modules/slider';
 import bd from './modules/bd';
 import search from './modules/search';
 import select from './modules/select';
+import footer from './modules/footer';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -23,4 +24,5 @@ slider();
 bd();
 search('.search__pos', '.overlay__search');
 select();
+footer();
 })
