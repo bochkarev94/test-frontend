@@ -5,6 +5,8 @@ import modal from './modules/modal';
 import formModal from './modules/form';
 import more from './modules/more';
 import slider from './modules/slider';
+import bd from './modules/bd';
+import search from './modules/search';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -17,4 +19,6 @@ modal('[data-modal="phone"]', '.overlay__modal', '.modal', '.modal__close');
 formModal('.modal__status', '.overlay__modal', '.modal');
 more();
 slider();
+bd();
+search('.search__pos', '.overlay__search');
 })

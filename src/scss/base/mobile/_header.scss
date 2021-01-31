@@ -28,6 +28,11 @@
                 margin-right: 0;
             }
         }
+        .search {
+            &__drop {
+                width: 555px;
+            }
+        }
     }
 }
 
@@ -40,6 +45,11 @@
         .menu {
             &__item {
                 font-size: 11px;
+            }
+        }
+        .search {
+            &__drop {
+                width: 366px;
             }
         }
     }
