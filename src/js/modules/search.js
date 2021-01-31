@@ -34,7 +34,17 @@ const search = (searchSelector, overlaySelector) => {
             searchList.classList.remove('search__pos-active');
             overlay.style.display='none';
         }
-    })
+    });
+
+    filterList.forEach((item, i) => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            let text = this.querySelector('.search__title').innerText;
+            input.value = text;
+            searchList.classList.remove('search__pos-active');
+            overlay.style.display='none';
+        })
+    });
 }
 
 export default search;

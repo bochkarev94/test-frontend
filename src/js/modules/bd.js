@@ -9,7 +9,7 @@ const bd = () => {
         render() {
             const element = document.createElement('a');
             element.innerHTML = `
-                ${this.title}<span>${this.subtitle}</span>
+                <p class='search__title'>${this.title}</p><span >${this.subtitle}</span>
             `;
             this.parent.append(element);
         }
