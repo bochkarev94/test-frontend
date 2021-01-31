@@ -5,42 +5,11 @@
     margin-left: 11px;
     margin-bottom: 4px;
 
-    &__select {
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 44%;
-            right: 6px;
-            display: block;
-            border:solid;
-            border-width: 5px 4px 0;
-            border-color: #393939 transparent transparent transparent;
-        }
-        select {
-            width: 50px;
-            padding-left: 11px;
-            border: none;
-            line-height: 1;
-            appearance: none;
-            border-radius: 5px 0 0 5px;
-            background-color: #f1f1f1;
-            color: #777777;
-            font-size: 14px;
-            font-weight: 400;
-            height: 33px;
-            cursor: pointer;
-            &:active,
-            &:focus {
-                border: none;
-                outline: none;
-            }
-        }
-    }
+    
     &__input {
         padding: 5px 0px 4px 25px;
         border: none;
-        width: 619px;
+        width: 668px;
         color: #000000;
         font-size: 16px;
         font-weight: 600;
@@ -106,4 +75,69 @@
             margin-top: -4px;
         }
     }
+
+    .select {
+        position: relative;
+        &__current {
+            position: absolute;
+            top: -17px;
+            left: -3px;
+            padding-left: 11px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #f1f1f1;
+            color: #777777;
+            font-size: 14px;
+            font-weight: 400;
+            height: 33px;
+            padding-right: 20px;
+            padding-top: 6px;
+            white-space: nowrap;
+            cursor: pointer;
+            &:active,
+            &:focus {
+                border: none;
+                outline: none;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 44%;
+                right: 6px;
+                display: block;
+                border: solid;
+                border-width: 5px 4px 0;
+                border-color: #393939 transparent transparent transparent;
+                cursor: pointer;
+            }
+        }
+        &__body {
+            display: none;
+            position: absolute;
+            top: 16px;
+            left: -2px;
+            min-width: 170px;
+            border: 1px solid #e8e7e7;
+            background-color: #f1f1f1;
+            z-index: 201;
+            color: #343434;
+            font-size: 13px;
+            font-weight: 300;
+            padding: 10px 20px 20px 10px;
+            &-active {
+                display: block;
+            }
+        }
+        &__title {
+            color: #777777;
+            margin-bottom: 20px;
+        }
+        &__item {
+            cursor: pointer;
+            &:hover {
+                color: #00aa4b;
+            }
+        }
+    } 
 }
+    

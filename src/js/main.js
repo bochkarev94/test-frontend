@@ -7,6 +7,7 @@ import more from './modules/more';
 import slider from './modules/slider';
 import bd from './modules/bd';
 import search from './modules/search';
+import select from './modules/select';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -21,4 +22,5 @@ more();
 slider();
 bd();
 search('.search__pos', '.overlay__search');
+select();
 })

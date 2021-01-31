@@ -22,6 +22,7 @@ const copyBtn = (trigger, idSelector, btnSelect) => {
         mailTrigger.classList.add('menu__item-active');
         btn.style.display = 'block';
     });
+    
     btn.addEventListener('click', (e) => {
         e.preventDefault();
 

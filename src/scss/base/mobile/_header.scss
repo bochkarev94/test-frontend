@@ -154,7 +154,7 @@
         }
 
         &__middle {
-            grid-template-columns: 330px 80px 80px 80px;
+            grid-template-columns: minmax(330px, auto) 80px 80px 80px;
             padding-bottom: 10px;
         }
 
