@@ -66,8 +66,6 @@
         }
 
         &__text {
-            margin: 0;
-
             &-cn {
                 &:nth-child(3) {
                     text-align: left;
@@ -97,6 +95,9 @@
         .whild {
             &-lm {
                 max-width: 247px;
+            }
+            &-l {
+                margin: 0;
             }
         }
     }

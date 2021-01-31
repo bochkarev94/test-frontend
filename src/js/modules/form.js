@@ -45,6 +45,7 @@ const formModal = (statusSelector, overlaySelector, modalSelector) => {
                     setTimeout(() => {
                         status.textContent = '';
                         hiddenModal(overlay, modal);
+                        document.querySelector('[data-modal="phone"]').classList.remove('menu__item-active');
                     }, 2000);
                 })
         });
