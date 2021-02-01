@@ -13,7 +13,7 @@ const hamburger = (trigger, idSelector, overlaySelector, closeMenu) => {
         });
         close.addEventListener('click', () => {
             overlay.style.display = 'none';
-            menu.style.marginLeft = `-400px`;
+            menu.style.marginLeft = `-500px`;
             document.body.style.overflow = '';
         });
 }
