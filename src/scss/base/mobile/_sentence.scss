@@ -42,3 +42,13 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .sentence {
+        .card {
+            opacity: 0;
+            margin-top: -120px;
+            transition: 1s all;
+        }
+    }
+}
